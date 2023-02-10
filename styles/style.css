@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+        
+}
+div {
+    font-size: xx-large;
+    text-align: center;
+}
+
+@media (max-width: 1440px) {
+    body {
+        background-color: #7fffd5;
+    }
+    div::after {
+        content: 'screen size > 1440px'; 
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        background-color: #208b21;
+    }
+    div::after {
+        content: 'screen size =< 1440px'; 
+    }
+}
